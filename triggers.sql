@@ -38,6 +38,8 @@ create
 	end $$
 delimiter ;
 
+-- trigger can be used in insert, update, delete;
+-- trigger can be used in before, after
 
 insert into employee (first_name, last_name, birth_date, sex, salary, super_id, branch_id)
  values ('kumar', 'versio', '1978-10-01', 'M', 71000, 1, 4);
