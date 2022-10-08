@@ -1,0 +1,178 @@
+﻿Entity - An object we want to model & store information about
+  
+
+Attribute - specific piece of information about an entity
+  
+
+Primary key - An attribute that uniquely identifies an entity in the database table
+Which is underlined
+  
+
+Composite Attribute - An attribute can be broken up into sub attribute.
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Multi value attribute - An attribute that can have more than one value
+  
+
+Derived attribute - An attribute that can be derived from the other attribute
+  
+
+has_honers  which not going to be noted by ours, so that as to me
+
+
+
+
+
+
+Multiple Entities - you can define more than one entity in the diagram
+  
+
+
+
+Relationship 
+
+
+(partial participation) Single line  = Not all students need to take a class.(means only some of the students have to take a class).
+(total participation) Double line =  All of the classes need to be taken by a  at least a single student.  
+In other words all classes need to have a student taking the class.
+
+
+
+
+Relationship attribute:
+  
+
+When the student take the class will get a particular grade for that class, but the grade isn’t necessarily stored on the student entity, it only stored in the relationship
+
+
+But if take the class i get the grade
+
+
+Relationship Cardinality 
+
+
+M - A one student can take many classes like (2 or 3 classes).
+N - In one class they many students.
+  
+
+1:1  is to that a student can take one class and one class take one student
+1:N is that a student can take one class and a class can take many students.
+
+
+Weak entity
+  
+
+
+
+Weak entity is relay or depend on the another entity
+
+
+Like we need to take a exam_id without the class, because, if a student takes a classes, they will get to through the exam, so that we only get the exam_id,
+For exam to exist it has to be associated with the class it like a abstract data
+
+
+Marked a double line of rectangle, square mark us weakly identified.
+Weak entity has total participation with weakly identify
+
+
+Like all exam must have class, not the exam without class
+Designing database schema
+
+
+Storage requirement and the actual database schema to get implement in the database management system
+
+
+Business requirement to actual database requirement
+
+
+
+
+Document into database schema
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+It has total participation so that every branch need a employee and every employee need a branch
+
+
+1:N
+
+
+1-Employee can work for one branch at a time,
+N-A branch can have multiple employees
+
+
+  
+
+
+
+Total participation - every manges need all branch
+Partial participation - any one of the employees can be the manager for the branch, not all employee need to manage the branch
+
+
+1:1 an branch can be manage by the one employee
+And also employee can manage the branch
+
+
+
+
+  
+
+
+
+  
+
+1 - employee supervise  can have only one supervisor
+N - employee supervisor can have n of supervisee.
+1: N (One supervisee can have only one supervisor, but one supervisor can have n of supervisee)
+  
+
+
+
+Total participation - a client will need a  branch compulsory
+Partial participation - a branch have or not have a client
+1: N a branch can have n number of client
+But a client can have 1 branch  
+
+
+Total participation - client must have employee
+Partial participation - employee can have or not the client
+
+
+  
+
+
+
+Weak entity and Identifying relationship that means in depend on other entity
+Total participation - all branch supplier must have a branch
+Parietal participation - a branch must have or not a branch supplier
+
+
+N:M a branch supplier can have n number of branches.
+M a branch supplier can have a number of branch suppliers.
